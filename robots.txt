@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cwork0340-netizen.github.io/FUCAR/sitemap.xml
