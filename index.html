@@ -3,86 +3,261 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>修車工｜台北・新北 預約制汽車維修</title>
-<meta name="description" content="原廠出身，歐系車維修經驗12年以上。台北新北預約制汽車維修保養。電話或LINE聯繫。">
+
+<title>修車工｜台北新北預約制汽車維修保養</title>
+<meta name="description" content="原廠出身，歐系車維修經驗12年以上。台北新北預約制汽車維修與保養服務。">
 
 <style>
+:root{
+  --blue:#0f172a;
+  --blue2:#1e3a8a;
+  --light:#f8fafc;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+}
+
 body{
   margin:0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
-  background:#0f172a;
-  color:#f1f5f9;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC",sans-serif;
+  background:var(--blue);
+  color:var(--light);
   line-height:1.6;
 }
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:40px 20px;
+
+/* 導覽列 */
+nav{
+  background:#0b1220;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
-h1{font-size:32px;margin-bottom:10px}
-h2{margin-top:40px}
+
+nav h1{
+  margin:0;
+  font-size:18px;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:bold;
+}
+
+/* Hero */
+.hero{
+  padding:70px 20px;
+  background:linear-gradient(135deg,var(--blue2),#1e40af);
+  text-align:center;
+}
+
+.hero h2{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:18px;
+  opacity:0.9;
+}
+
 .btn{
   display:inline-block;
-  padding:12px 20px;
-  margin:10px 10px 0 0;
+  margin:20px 10px 0 10px;
+  padding:14px 24px;
   border-radius:8px;
   text-decoration:none;
   font-weight:bold;
 }
-.line{background:#22c55e;color:#000;}
-.call{background:#ef4444;color:#fff;}
-.card{
-  background:#1e293b;
-  padding:20px;
-  border-radius:12px;
-  margin-top:20px;
+
+.btn-line{
+  background:#22c55e;
+  color:#000;
 }
-footer{
-  margin-top:50px;
-  padding:20px;
+
+.btn-call{
+  background:#ef4444;
+  color:#fff;
+}
+
+/* 信任數字區 */
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  padding:50px 20px;
+  background:#e2e8f0;
+  color:var(--text);
   text-align:center;
+}
+
+.stat h3{
+  margin:0;
+  font-size:34px;
+  color:var(--blue2);
+}
+
+.stat p{
+  margin:5px 0 0 0;
+  font-weight:bold;
+}
+
+/* 服務區 */
+.section{
+  background:var(--light);
+  color:var(--text);
+  padding:60px 20px;
+}
+
+.section h3{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:26px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h4{
+  margin-top:0;
+  color:var(--blue2);
+}
+
+/* 社群 icon */
+.social{
+  text-align:center;
+  padding:40px 20px;
+  background:#f1f5f9;
+}
+
+.social h4{
+  margin-bottom:20px;
+}
+
+.social a{
+  margin:0 15px;
+  display:inline-block;
+}
+
+.social svg{
+  width:34px;
+  height:34px;
+  fill:#1e3a8a;
+  transition:0.3s;
+}
+
+.social svg:hover{
+  fill:#2563eb;
+}
+
+/* Footer */
+.footer{
+  background:#0b1220;
+  text-align:center;
+  padding:30px;
   font-size:14px;
-  color:#94a3b8;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
 
-<h1>修車工｜預約制汽車維修保養</h1>
-<p>原廠出身，歐系車維修經驗 12 年以上。<br>
-提供專業、高效、透明溝通的汽車維修與保養服務。</p>
+<nav>
+  <h1>修車工 FUCAR</h1>
+  <div>
+    <a href="#services">服務項目</a>
+    <a href="#contact">聯絡</a>
+  </div>
+</nav>
 
-<a href="https://line.me/ti/p/XXXXXXXX" class="btn line">➕ LINE 聯繫</a>
-<a href="tel:0986045765" class="btn call">📞 立即致電</a>
+<section class="hero">
+  <h2>原廠出身｜歐系車維修經驗 12+ 年</h2>
+  <p>預約制專業維修與保養，重視安全、透明溝通與信任。</p>
+  <a href="https://line.me/ti/p/XXXXXXXX" class="btn btn-line">➕ LINE 聯繫</a>
+  <a href="tel:09XXXXXXXX" class="btn btn-call">📞 立即致電</a>
+  <p style="margin-top:20px;font-weight:bold;">「您的愛車問題，我的專業幫你解決！」</p>
+</section>
 
-<div class="card">
-<h2>服務項目</h2>
-<ul>
-<li>汽車維修：積碳清洗、冷氣維修、漏油、引擎亮燈</li>
-<li>汽車保養：定期保養與車況檢查</li>
-<li>異常聲音查修：底盤、引擎異音排查</li>
-<li>汽車改裝（需先溝通）</li>
-</ul>
+<section class="stats">
+  <div class="stat">
+    <h3>12+</h3>
+    <p>年維修經驗</p>
+  </div>
+  <div class="stat">
+    <h3>原廠</h3>
+    <p>體系背景</p>
+  </div>
+  <div class="stat">
+    <h3>預約制</h3>
+    <p>安心服務</p>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h3>服務項目</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>汽車維修</h4>
+      <p>積碳清洗、冷氣維修、漏油處理、引擎亮燈等故障排除。</p>
+    </div>
+    <div class="card">
+      <h4>汽車保養</h4>
+      <p>定期保養與車況檢查，維持車輛最佳狀態。</p>
+    </div>
+    <div class="card">
+      <h4>異常聲音查修</h4>
+      <p>專業檢測與定位底盤或引擎異音問題。</p>
+    </div>
+    <div class="card">
+      <h4>汽車改裝（需先溝通）</h4>
+      <p>性能改裝與需求評估，重視安全與合法性。</p>
+    </div>
+  </div>
+</section>
+
+<section class="social">
+  <h4>🔧 更多維修案例與施工紀錄</h4>
+  <p>歡迎前往社群查看最新分享</p>
+
+  <a href="https://instagram.com/你的帳號" target="_blank">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2c2 0 3 1 3 3v10c0 2-1 3-3 3H7c-2 0-3-1-3-3V7c0-2 1-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10z"/>
+    </svg>
+  </a>
+
+  <a href="https://facebook.com/你的帳號" target="_blank">
+    <svg viewBox="0 0 24 24">
+      <path d="M22 12a10 10 0 10-11.6 9.9v-7H7v-3h3.4V9c0-3 1.8-4.6 4.4-4.6 1.3 0 2.6.2 2.6.2v3H16c-1.5 0-2 1-2 2v2.4h3.3l-.5 3H14v7A10 10 0 0022 12z"/>
+    </svg>
+  </a>
+
+</section>
+
+<section class="section" id="contact" style="background:#e2e8f0;">
+  <h3>聯絡方式</h3>
+  <p style="text-align:center;font-size:18px;">
+    服務範圍：台北市｜新北市<br>
+    電話：09XXXXXXXX
+  </p>
+</section>
+
+<div class="footer">
+© 2025 修車工 FUCAR｜預約制汽車維修保養
 </div>
 
-<div class="card">
-<h2>服務說明</h2>
-<p>採預約制服務，先溝通需求與車況，再安排時間與處理方式。<br>
-讓維修合作安心、愉快。</p>
-<p><strong>「您的愛車問題，我的專業幫你解決！」</strong></p>
-</div>
-
-<div class="card">
-<h2>服務範圍</h2>
-<p>台北市｜新北市</p>
-</div>
-
-<footer>
-© 2025 修車工 FUCAR
-</footer>
-
-</div>
 </body>
 </html>
